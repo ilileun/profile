@@ -8,6 +8,7 @@ export interface Publication {
   citations?: number;
   link?: string;
   pdf?: string;
+  thumbnail?: string;
 }
 
 export const publications: Publication[] = [
@@ -23,6 +24,7 @@ export const publications: Publication[] = [
       "LLM이 로봇 Reasoning, Planning, Perception, Control에 미치는 영향 체계적 분석",
     citations: 154,
     link: "https://link.springer.com/article/10.1007/s11370-024-00550-5",
+    thumbnail: "/papers/thumbnails/isr_survey.png",
   },
   {
     title:
@@ -34,6 +36,7 @@ export const publications: Publication[] = [
     description:
       "물리 엔진 기반 3D 렌더링으로 대규모 공간 관계 데이터셋 자동 생성, LoRA 기반 LMM Fine-tuning, Multi-Agent 기법을 통한 공간적 장면 그래프 생성",
     pdf: "/papers/spatial-scene-graph-sft-lmm-2025.pdf",
+    thumbnail: "/papers/thumbnails/scene_graph.png",
   },
   {
     title: "MGHanD: Multi-modal Guidance for authentic Hand Diffusion",
@@ -44,5 +47,6 @@ export const publications: Publication[] = [
     description:
       "Text/Image 가이던스 기반 디퓨전 과정 손 이미지 왜곡 개선",
     link: "https://arxiv.org/abs/2503.08133",
+    thumbnail: "/papers/thumbnails/mghand.png",
   },
 ];

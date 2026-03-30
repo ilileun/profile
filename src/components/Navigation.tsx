@@ -20,8 +20,7 @@ export default function Navigation() {
           href="#"
           className="text-base font-bold hover:text-theme transition-colors"
         >
-          ~/{" "}
-          <span className="text-theme">jieun</span>
+          Jieun Choi
         </a>
 
         {/* Desktop */}
