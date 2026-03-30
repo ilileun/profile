@@ -7,7 +7,7 @@ export const profile = {
   image: "/profile.jpg",
   contact: {
     email: "jichoi0101@gmail.com",
-    github: "",
+    github: "https://github.com/ilileun",
     linkedin: "",
     scholar:
       "https://scholar.google.com/citations?user=7BHY-McAAAAJ&hl=ko",

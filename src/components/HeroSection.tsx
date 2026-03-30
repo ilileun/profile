@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { profile } from "@/payload/profile";
-import { FiMail } from "react-icons/fi";
+import { FiMail, FiGithub } from "react-icons/fi";
 import { SiGooglescholar } from "react-icons/si";
 
 const basePath = process.env.NODE_ENV === "production" ? "/profile" : "";
@@ -119,6 +119,17 @@ export default function HeroSection() {
               <FiMail size={14} className="text-theme" />
               {profile.contact.email}
             </a>
+            {profile.contact.github && (
+              <a
+                href={profile.contact.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 hover:text-theme transition-colors"
+              >
+                <FiGithub size={14} className="text-theme" />
+                GitHub
+              </a>
+            )}
             {profile.contact.scholar && (
               <a
                 href={profile.contact.scholar}

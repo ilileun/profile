@@ -23,16 +23,22 @@ export default function CVPage() {
 
       {/* Header */}
       <header className="mb-8 border-b-2 border-[#222] pb-4">
-        <h1 className="text-3xl font-bold tracking-tight">Jieun Choi</h1>
-        <p className="text-base text-gray-600 mt-1">AI Researcher</p>
-        <div className="flex flex-wrap gap-4 mt-3 text-sm text-gray-500" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-          <span>jichoi0101@gmail.com</span>
-          <span>
-            <a href="https://scholar.google.com/citations?user=7BHY-McAAAAJ" className="underline">Google Scholar</a>
-          </span>
-          <span>
-            <a href="https://ilileun.github.io/profile/" className="underline">Portfolio</a>
-          </span>
+        <div className="flex gap-5 items-start">
+          <img
+            src={`${basePath}/profile.jpg`}
+            alt="Jieun Choi"
+            className="w-20 h-20 rounded-full object-cover border border-gray-200 shrink-0 print:w-16 print:h-16"
+          />
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight">Jieun Choi</h1>
+            <p className="text-base text-gray-600 mt-1">AI Researcher</p>
+            <div className="flex flex-wrap gap-4 mt-2 text-sm text-gray-500" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              <span>jichoi0101@gmail.com</span>
+              <a href="https://github.com/ilileun" className="underline">GitHub</a>
+              <a href="https://scholar.google.com/citations?user=7BHY-McAAAAJ" className="underline">Google Scholar</a>
+              <a href="https://ilileun.github.io/profile/" className="underline">Portfolio</a>
+            </div>
+          </div>
         </div>
       </header>
 
