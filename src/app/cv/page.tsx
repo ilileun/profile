@@ -65,7 +65,7 @@ export default function CVPage() {
             </div>
             <span className="text-xs text-gray-400 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Mar 2025 – Present</span>
           </div>
-          <p className="text-sm text-gray-600 mt-1">Document AI R&amp;D (dewarping, orientation, reading order) and Video AI model development &amp; serving</p>
+          <p className="text-sm text-gray-600 mt-1">Document AI &amp; Video AI model R&amp;D, fine-tuning, and production serving</p>
         </div>
 
         <div className="mb-4">
