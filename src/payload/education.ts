@@ -13,7 +13,7 @@ export const education: Education[] = [
     major: "전산학부 석사",
     period: "2023.02 - 2025.02",
     description: "Robust Intelligence and Robotics Laboratory (지도교수: 박대형)",
-    gpa: "3.80 / 4.3 (95.00 / 100)",
+    gpa: "3.80 / 4.3",
     link: "https://rirolab.kaist.ac.kr",
   },
   {
@@ -51,6 +51,5 @@ export interface Language {
 }
 
 export const languages: Language[] = [
-  { name: "OPIc 영어", detail: "2025.12 응시" },
-  { name: "OPIc 중국어", detail: "2025.12 응시" },
+  { name: "OPIc 영어", detail: "IH (Intermediate High)" },
 ];

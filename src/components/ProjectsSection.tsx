@@ -10,9 +10,12 @@ export default function ProjectsSection() {
       <div className="space-y-8">
         {projects.map((project, i) => (
           <div key={project.title}>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1">
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
               <h3 className="text-base font-semibold">
                 {project.title}
+                <span className="text-xs text-theme font-medium ml-2">
+                  {project.org}
+                </span>
               </h3>
               <span
                 className="text-xs text-gray-400 shrink-0"
@@ -22,23 +25,22 @@ export default function ProjectsSection() {
               </span>
             </div>
 
-            <p className="text-xs text-theme mb-2">{project.org}</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
-              {project.description}
-            </p>
+            <div className="space-y-1.5 text-[14px] leading-relaxed">
+              <p>
+                <span className="text-theme font-medium text-xs mr-1.5">Problem</span>
+                {project.problem}
+              </p>
+              <p>
+                <span className="text-theme font-medium text-xs mr-1.5">Approach</span>
+                {project.approach}
+              </p>
+              <p>
+                <span className="text-theme font-medium text-xs mr-1.5">Result</span>
+                {project.result}
+              </p>
+            </div>
 
-            <ul className="space-y-1 mb-3">
-              {project.highlights.map((h, hi) => (
-                <li
-                  key={hi}
-                  className="text-[13px] leading-relaxed pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-gray-400"
-                >
-                  {h}
-                </li>
-              ))}
-            </ul>
-
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-1.5 mt-3">
               {project.techStack.map((tech) => (
                 <span
                   key={tech}

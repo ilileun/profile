@@ -3,12 +3,14 @@
 import SectionHeading from "./SectionHeading";
 
 const news = [
-  { date: "2026.01", text: "Document AI 프로젝트 착수 — 문서 왜곡 보정(Dewarping), 방향 인식(Orientation)" },
-  { date: "2025.03", text: "KT 기술혁신부문 GenAI기술팀 선임 연구원 입사" },
-  { date: "2025.03", text: "arXiv 논문 공개 — Spatial Scene Graph Generation Using Large Multimodal Models" },
+  { date: "2026.01", text: "Document AI 프로젝트 착수 — 문서 왜곡 보정, 방향 인식 모델 개발" },
+  { date: "2025.03", text: "KT GenAI기술팀 선임 연구원 입사" },
+  { date: "2025.03", text: "MGHanD 논문 arXiv 공개" },
   { date: "2025.02", text: "KAIST 전산학부 석사 졸업" },
-  { date: "2024.08", text: "Intelligent Service Robotics 논문 출판 (LLM + Robots Survey)" },
+  { date: "2024.08", text: "LLM + Robots Survey 논문 출판 (Intelligent Service Robotics)" },
   { date: "2024.07", text: "KT Vision AI연구담당 Research Intern" },
+  { date: "2023.02", text: "KAIST 전산학부 석사 입학 (RIRO Lab)" },
+  { date: "2021.06", text: "전남대학교 학사 졸업 (Summa Cum Laude)" },
 ];
 
 export default function AboutSection() {
