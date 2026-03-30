@@ -60,15 +60,15 @@ export const projects: Project[] = [
     techStack: ["PyTorch", "LoRA", "vLLM", "Docker"],
   },
   {
-    title: "씬 타이틀 추출 시스템",
+    title: "씬 타이틀 추천 시스템 및 번역 모듈",
     period: "2025.01 - 2025.12",
     org: "KT 미디어본부 기술지원",
     problem:
-      "씬별 타이틀 수작업 생성에 비용·시간 과다",
+      "씬별 타이틀 수작업 생성에 비용·시간 과다. 영→한 번역 시 JSON 메타 구조가 깨지는 문제 발생",
     approach:
-      "LLM 기반 메타데이터 + STT 대사 결합 자동 생성. 번역 시 JSON 깨짐은 항목별 개별 질의로 해결",
+      "Scene 메타 정보 + STT 대사를 결합한 씬 타이틀 추천 프로토타입 개발. JSON 구조 보존형 번역 모듈을 별도 설계하고, 프롬프트 엔지니어링 + 항목 단위 개별 질의 방식 도입",
     result:
-      "씬당 0.3초 처리. 번역 실패율 5% → 0%",
+      "씬당 타이틀 생성 0.3초, 번역 씬당 3초 이내 처리. 번역 실패율 5% → 0%",
     techStack: ["vLLM", "Prompt Engineering"],
   },
   // KT 인턴
