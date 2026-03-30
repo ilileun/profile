@@ -73,9 +73,21 @@ export const projects: Project[] = [
   },
   // KAIST 석사 연구
   {
+    title: "BECS: 빅데이터 엣지 클라우드 서비스 연구 (IITP 국책과제)",
+    period: "2024.07 - 2024.12",
+    org: "KAIST · BECS 연구센터",
+    problem:
+      "엣지 클라우드 환경에서 대규모 데이터의 실시간 수집·분석·서비스 기술 필요",
+    approach:
+      "빅데이터 엣지 클라우드 서비스 플랫폼 연구 참여, Spatial Scene Graph 연구 성과 발표",
+    result:
+      "Scene Graph Generation 연구를 BECS 과제 내에서 발표 및 검증",
+    techStack: ["Edge Cloud", "Big Data", "Scene Graph"],
+  },
+  {
     title: "Spatial Scene Graph Generation Using Large Multimodal Models",
     period: "2024 - 2025",
-    org: "KAIST · 1st Author",
+    org: "KAIST · BECS · 1st Author",
     problem:
       "GPT-4, LLaVA 등 기존 LMM이 좌우 구분, 객체 카운팅 등 기본적 공간 추론에 한계",
     approach:

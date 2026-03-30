@@ -27,7 +27,9 @@
       "WebFetch(domain:arxiv.org)",
       "Bash(ls /Users/jichoi/Downloads/mghand* /Users/jichoi/Downloads/scene_graph* /Users/jichoi/Downloads/isr_survey*)",
       "WebFetch(domain:becs.kaist.ac.kr)",
-      "Bash(npm ls:*)"
+      "Bash(npm ls:*)",
+      "Bash(curl -s -L --max-time 30 'https://becs.kaist.ac.kr/')",
+      "Bash(curl -s -L --max-time 30 'https://becs.kaist.ac.kr/#_3')"
     ]
   }
 }
