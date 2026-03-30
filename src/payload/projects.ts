@@ -151,7 +151,7 @@ export const projects: Project[] = [
     title: "사내 AI 기술 블로그 기획 및 운영",
     period: "2022.01 - 2022.06",
     org: "POSCO",
-    type: "기술지원",
+    type: "기획",
     problem:
       "AI 모델을 개발하는 전문가들이 사내에 다수 있었지만 서로의 작업을 공유할 채널이 없었음. 뉴칼라 인증(사내 IT역량 레벨) 심사에서 모델 개발 기여도를 평가할 기준도 모호한 상태",
     approach:
