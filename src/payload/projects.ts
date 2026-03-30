@@ -46,11 +46,11 @@ export const projects: Project[] = [
       "진행 중",
     techStack: ["PyTorch", "Document AI"],
   },
-  // KT 미디어본부 협력과제
+  // KT 미디어본부 기술지원
   {
     title: "비디오 메타데이터 추출 모델 고도화",
     period: "2025.01 - 2025.12",
-    org: "KT 미디어본부 협력과제",
+    org: "KT 미디어본부 기술지원",
     problem:
       "드라마 등 장편 비디오에서 씬 메타데이터를 수동 생성하는 비용이 과도함",
     approach:
@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     title: "씬 타이틀 추출 시스템",
     period: "2025.01 - 2025.12",
-    org: "KT 미디어본부 협력과제",
+    org: "KT 미디어본부 기술지원",
     problem:
       "비디오 씬별 타이틀을 수작업으로 생성하는 데 시간과 비용 과다",
     approach:
@@ -131,6 +131,31 @@ export const projects: Project[] = [
     result:
       "기존 디퓨전 모델 대비 손 생성 품질 향상",
     techStack: ["Stable Diffusion", "LoRA", "ViT", "DDIM"],
+  },
+  // POSCO
+  {
+    title: "제조현장 생산/물류 Simulation 투자 타당성 검증",
+    period: "2022.03 - 2022.08",
+    org: "POSCO · Smart Factory 기획그룹",
+    problem:
+      "크레인(OHC) 추가 도입 투자(20억)의 타당성을 객관적으로 검증할 방법 필요",
+    approach:
+      "ProModel 기반 가상 공장 구현. 야드 적치 능력, 4대 크레인 작업개소, 연마기·수냉챔버 등 10가지 장설비 특성 모델링. 5가지 시나리오 Case 분석",
+    result:
+      "98% 정확도의 가상 공장 구현, 크레인 가동률 및 최적 작업영역 제시로 투자 검증 완료",
+    techStack: ["ProModel", "Simulation", "Manufacturing"],
+  },
+  {
+    title: "사내 AI 기술 블로그 기획 및 운영",
+    period: "2022.01 - 2022.06",
+    org: "POSCO · Smart Factory 기획그룹",
+    problem:
+      "AI 전문가 간 소통 부재 및 모델 개발 기여도 평가 어려움",
+    approach:
+      "국내외 IT 기업 기술 블로그 벤치마킹 후 사내 AI 블로그 기획. 직원 VoC 기반 카테고리 설계, 매뉴얼 제작, 뉴칼라 인증 프로세스 연계",
+    result:
+      "파일럿 3개월: 109명 가입 (목표 50명 대비 2배), 22건 게시. 뉴칼라 레벨 인증 프로세스에 블로그 기재 의무화",
+    techStack: ["Planning", "Community", "AI Blog"],
   },
   // 전남대 학부 연구
   {

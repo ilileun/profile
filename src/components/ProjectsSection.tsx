@@ -10,8 +10,14 @@ const groups = [
     color: "border-pink-300 dark:border-pink-700",
     bg: "bg-pink-50/50 dark:bg-pink-950/20",
     dot: "bg-pink-400",
-    filter: (p: typeof projects[number]) =>
-      p.org.includes("메리츠") || p.org.includes("KT"),
+    filter: (p: typeof projects[number]) => p.org.includes("메리츠"),
+  },
+  {
+    label: "KT 미디어본부 기술지원",
+    color: "border-orange-300 dark:border-orange-700",
+    bg: "bg-orange-50/50 dark:bg-orange-950/20",
+    dot: "bg-orange-400",
+    filter: (p: typeof projects[number]) => p.org.includes("미디어본부"),
   },
   {
     label: "KAIST 석사 연구",
@@ -19,6 +25,13 @@ const groups = [
     bg: "bg-blue-50/50 dark:bg-blue-950/20",
     dot: "bg-blue-400",
     filter: (p: typeof projects[number]) => p.org.includes("KAIST"),
+  },
+  {
+    label: "POSCO Smart Factory",
+    color: "border-slate-300 dark:border-slate-600",
+    bg: "bg-slate-50/50 dark:bg-slate-950/20",
+    dot: "bg-slate-400",
+    filter: (p: typeof projects[number]) => p.org.includes("POSCO"),
   },
   {
     label: "전남대 학부 연구",
