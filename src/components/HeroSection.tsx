@@ -10,11 +10,13 @@ export default function HeroSection() {
       <div className="flex flex-col md:flex-row gap-10 items-start">
         {/* Left: Avatar */}
         <div className="shrink-0 mx-auto md:mx-0">
-          <div className="w-36 h-36 rounded-full bg-gradient-to-br from-theme/20 to-theme-dark/20 flex items-center justify-center border-2 border-gray-200 dark:border-gray-700">
-            <span className="text-5xl font-bold text-theme">
-              {profile.name.charAt(0)}
-            </span>
-          </div>
+          <img
+            src={`${process.env.NODE_ENV === "production" ? "/profile" : ""}/profile.jpg`}
+            alt={profile.name}
+            width={144}
+            height={144}
+            className="w-36 h-36 rounded-full object-cover border-2 border-gray-200 dark:border-gray-700"
+          />
         </div>
 
         {/* Right: Info */}
