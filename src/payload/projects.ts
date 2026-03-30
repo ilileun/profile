@@ -23,15 +23,15 @@ export const projects: Project[] = [
     techStack: ["PyTorch", "Blender", "Docker"],
   },
   {
-    title: "Document Orientation (문서 방향 인식)",
+    title: "문서 방향 인식 (Document Orientation)",
     period: "2025.10 - 2026.04",
     org: "메리츠화재 · KT 공동연구",
     problem:
-      "문서가 0°/90°/180°/270° 다양한 방향으로 입력되어 후속 OCR 및 레이아웃 분석 실패",
+      "파이프라인에 회전된 상태로 들어오는 문서가 그대로 OCR에 입력되면 글자를 아예 인식하지 못하는 문제가 반복 발생",
     approach:
-      "경량 분류 모델 2종 비교 후 PP-LCNet 선정. 10만장 학습 데이터 구축, Fine-tuning, edge-crop 기반 재추론 후처리 설계",
+      "경량 분류 모델 2종 비교 후 PP-LCNet 선정, 10만장 학습 데이터 구축·Fine-tuning. 여백이 많은 이미지에서 오분류가 남아 있어 conf 0.9 미만인 건 가장자리를 crop하여 재추론하는 후처리를 설계",
     result:
-      "94.03% → 99.59% 정확도. 고신뢰도 구간 100%. 추론 64ms",
+      "베이스라인 대비 99.59%(+5.56%p). 배치 추론으로 64ms → 30ms 이내(약 2배 개선)",
     techStack: ["PyTorch", "PaddlePaddle"],
   },
   {
