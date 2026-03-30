@@ -145,19 +145,19 @@ export default function CVPage() {
         <h2 className="text-sm font-bold uppercase tracking-widest text-[#b509ac] mb-3">Selected Projects</h2>
         <div className="text-sm space-y-2">
           <div className="flex justify-between items-baseline">
-            <p><strong>Spatial Scene Graph Generation</strong> <span className="text-gray-400 text-xs">BECS · IITP</span> — 1st Author. LMM 기반 공간 추론 강화 및 Multi-Agent 장면 그래프 생성</p>
+            <p><strong>Spatial Scene Graph Generation</strong> <span className="text-gray-400 text-xs">BECS · IITP</span> — 1st Author. Spatial reasoning enhancement via LoRA fine-tuning and Multi-Agent scene graph generation</p>
             <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2024–2025</span>
           </div>
           <div className="flex justify-between items-baseline">
-            <p><strong>6-DoF Pose Estimation</strong> <span className="text-gray-400 text-xs">SEMES</span> — 비정형 삽입구 자동 이/적재를 위한 비전 기반 포즈 추정</p>
+            <p><strong>6-DoF Pose Estimation</strong> <span className="text-gray-400 text-xs">SEMES</span> — Vision-based pose estimation for automated assembly of irregular multi-slot components</p>
             <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2023–2024</span>
           </div>
           <div className="flex justify-between items-baseline">
-            <p><strong>3D Concept Graph</strong> <span className="text-gray-400 text-xs">과기부</span> — 자율행동체를 위한 실시간 3D 장면 그래프 생성 및 환경 인식</p>
+            <p><strong>3D Concept Graph</strong> <span className="text-gray-400 text-xs">MSIT</span> — Real-time 3D scene graph generation and environment perception for autonomous agents</p>
             <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2024–2027</span>
           </div>
           <div className="flex justify-between items-baseline">
-            <p><strong>Illegal Medical Institution Prediction</strong> <span className="text-gray-400 text-xs">건강보험공단</span> — Attention 기반 신경망을 활용한 사무장 병원 탐지</p>
+            <p><strong>Illegal Medical Institution Prediction</strong> <span className="text-gray-400 text-xs">NHIS</span> — Attention-based neural network for fraudulent hospital detection on large-scale claims data</p>
             <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2020–2021</span>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function CVPage() {
       <section className="mb-7">
         <h2 className="text-sm font-bold uppercase tracking-widest text-[#b509ac] mb-3">Certifications</h2>
         <div className="text-sm space-y-1">
-          <p><strong>Big Data Analyst (빅데이터분석기사)</strong> · Korea Data Agency · 2022</p>
+          <p><strong>Big Data Analyst</strong> · Korea Data Agency · 2022</p>
           <p><strong>ADsP</strong> · Korea Data Agency · 2022</p>
           <p><strong>OPIc English</strong> · IH (Intermediate High) · 2025.12</p>
         </div>
