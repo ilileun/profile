@@ -11,7 +11,7 @@ export interface Project {
 export const projects: Project[] = [
   // 메리츠화재 · KT 공동연구
   {
-    title: "Document Dewarping (문서 왜곡 보정)",
+    title: "문서 왜곡 보정 (Dewarping)",
     period: "2025.10 - 2026.04",
     org: "메리츠화재 · KT 공동연구",
     problem:
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     techStack: ["PyTorch", "UVDoc", "Blender"],
   },
   {
-    title: "문서 방향 인식 (Document Orientation)",
+    title: "문서 방향 인식 (Orientation)",
     period: "2025.10 - 2026.04",
     org: "메리츠화재 · KT 공동연구",
     problem:
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     techStack: ["PyTorch", "PaddlePaddle"],
   },
   {
-    title: "Reading Order (읽기 순서 정렬)",
+    title: "읽기 순서 정렬 (Reading Order)",
     period: "2025.10 - 2026.04",
     org: "메리츠화재 · KT 공동연구",
     problem:
@@ -48,7 +48,7 @@ export const projects: Project[] = [
   },
   // KT 미디어본부 기술지원
   {
-    title: "Narrative Video 요약 모델 고도화",
+    title: "비디오 요약 모델 고도화 (Narrative Video)",
     period: "2025.01 - 2025.12",
     org: "KT 미디어본부 기술지원",
     problem:
@@ -86,7 +86,7 @@ export const projects: Project[] = [
   },
   // KAIST 석사 연구
   {
-    title: "Spatial Scene Graph Generation (BECS · IITP 국책과제)",
+    title: "공간 장면 그래프 생성 (BECS · IITP 국책과제)",
     period: "2024.07 - 2025.02",
     org: "KAIST · BECS 연구센터 · 1st Author",
     problem:
@@ -123,7 +123,7 @@ export const projects: Project[] = [
   },
   // POSCO
   {
-    title: "제조현장 크레인(OHC) 투자 타당성 Simulation 검증",
+    title: "크레인(OHC) 투자 타당성 시뮬레이션 검증",
     period: "2022.03 - 2022.08",
     org: "POSCO · Smart Factory 기획그룹",
     problem:
