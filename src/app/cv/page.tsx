@@ -57,7 +57,7 @@ export default function CVPage() {
       <section className="mb-7">
         <h2 className="text-sm font-bold uppercase tracking-widest text-[#b509ac] mb-3">Experience</h2>
 
-        <div className="mb-5">
+        <div className="mb-4">
           <div className="flex justify-between items-baseline">
             <div>
               <h3 className="text-sm font-bold">KT · GenAI LAB</h3>
@@ -65,17 +65,10 @@ export default function CVPage() {
             </div>
             <span className="text-xs text-gray-400 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Mar 2025 – Present</span>
           </div>
-          <ul className="mt-1.5 text-sm space-y-1 list-none">
-            <li className="pl-3 relative before:content-['·'] before:absolute before:left-0 before:text-gray-400">
-              <strong>Meritz Fire Insurance Joint Research</strong> — Document dewarping (UVDoc + AADD fine-tuning, MS-SSIM 0.52), orientation classification (94% → 99.6%), reading order algorithm (+2.9%p over Greedy baseline)
-            </li>
-            <li className="pl-3 relative before:content-['·'] before:absolute before:left-0 before:text-gray-400">
-              <strong>KT Media Division Tech Support</strong> — Narrative video summarization via SFT on InternVideo2.5, semantic scene title recommendation system (0.3s/scene)
-            </li>
-          </ul>
+          <p className="text-sm text-gray-600 mt-1">Document AI 모델 연구개발 (문서 왜곡 보정, 방향 인식, 읽기 순서 정렬) 및 Video AI 모델 고도화·서빙</p>
         </div>
 
-        <div className="mb-5">
+        <div className="mb-4">
           <div className="flex justify-between items-baseline">
             <div>
               <h3 className="text-sm font-bold">KT · AI2XL LAB</h3>
@@ -83,14 +76,10 @@ export default function CVPage() {
             </div>
             <span className="text-xs text-gray-400 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Jul – Aug 2024</span>
           </div>
-          <ul className="mt-1.5 text-sm space-y-1 list-none">
-            <li className="pl-3 relative before:content-['·'] before:absolute before:left-0 before:text-gray-400">
-              Dialogue-based highlight detection pipeline (STT → LLM summarization → temporal grounding), IoU 0.52–0.75
-            </li>
-          </ul>
+          <p className="text-sm text-gray-600 mt-1">Video AI 기반 하이라이트 탐지 및 숏폼 자동 생성 연구</p>
         </div>
 
-        <div className="mb-5">
+        <div className="mb-4">
           <div className="flex justify-between items-baseline">
             <div>
               <h3 className="text-sm font-bold">POSCO · Smart Factory Planning Group</h3>
@@ -98,14 +87,7 @@ export default function CVPage() {
             </div>
             <span className="text-xs text-gray-400 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Jun 2021 – Jan 2023</span>
           </div>
-          <ul className="mt-1.5 text-sm space-y-1 list-none">
-            <li className="pl-3 relative before:content-['·'] before:absolute before:left-0 before:text-gray-400">
-              Manufacturing simulation for crane investment validation (98% accuracy, ProModel)
-            </li>
-            <li className="pl-3 relative before:content-['·'] before:absolute before:left-0 before:text-gray-400">
-              Planned &amp; launched internal AI tech blog — 109 members in 3 months (2× target), adopted as mandatory for certification
-            </li>
-          </ul>
+          <p className="text-sm text-gray-600 mt-1">Smart Factory 전략 수립, 제조현장 시뮬레이션 투자 검증, AI 인재 커뮤니티 기획·운영</p>
         </div>
       </section>
 
