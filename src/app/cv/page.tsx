@@ -197,16 +197,23 @@ export default function CVPage() {
         </div>
       </section>
 
-      {/* Awards & Certifications */}
+      {/* Awards */}
       <section className="mb-7">
-        <h2 className="text-sm font-bold uppercase tracking-widest text-[#b509ac] mb-3">Awards &amp; Certifications</h2>
+        <h2 className="text-sm font-bold uppercase tracking-widest text-[#b509ac] mb-3">Awards</h2>
         <div className="text-sm space-y-1">
           <p><strong>Gold Prize</strong> · Regional Problem-Solving Hackathon · Gwangju-Jeonnam Innovation Platform · 2021</p>
           <p><strong>Award</strong> · Post-COVID AI Challenge · KT &amp; NIA · 2020</p>
           <p><strong>Academic Excellence Award</strong> · Chonnam National University · 2021</p>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section className="mb-7">
+        <h2 className="text-sm font-bold uppercase tracking-widest text-[#b509ac] mb-3">Certifications</h2>
+        <div className="text-sm space-y-1">
           <p><strong>Big Data Analyst (빅데이터분석기사)</strong> · Korea Data Agency · 2022</p>
           <p><strong>ADsP</strong> · Korea Data Agency · 2022</p>
-          <p><strong>OPIc English</strong> · IH (Intermediate High)</p>
+          <p><strong>OPIc English</strong> · IH (Intermediate High) · 2025.12</p>
         </div>
       </section>
 

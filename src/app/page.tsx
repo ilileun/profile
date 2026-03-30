@@ -7,6 +7,7 @@ import PublicationsSection from "@/components/PublicationsSection";
 import EducationSection from "@/components/EducationSection";
 import AwardsSection from "@/components/AwardsSection";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <EducationSection />
       <AwardsSection />
       <Footer />
+      <BackToTop />
     </main>
   );
 }

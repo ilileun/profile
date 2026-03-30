@@ -51,5 +51,5 @@ export interface Language {
 }
 
 export const languages: Language[] = [
-  { name: "OPIc 영어", detail: "IH (Intermediate High)" },
+  { name: "OPIc 영어", detail: "IH (Intermediate High) · 2025.12" },
 ];
