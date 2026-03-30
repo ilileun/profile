@@ -14,7 +14,10 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(gh repo:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(gh auth:*)",
+      "WebFetch(domain:alshedivat.github.io)",
+      "Bash(npm install:*)"
     ]
   }
 }

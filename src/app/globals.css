@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #6366f1;
-  --color-primary-light: #818cf8;
-  --color-primary-dark: #4f46e5;
-  --color-accent: #06b6d4;
-  --color-surface: #0f172a;
-  --color-surface-light: #1e293b;
-  --color-surface-lighter: #334155;
+  --color-theme: #b509ac;
+  --color-theme-light: #d94fd2;
+  --color-theme-dark: #2698ba;
+  --color-muted: #828282;
+  --color-divider: rgba(0, 0, 0, 0.1);
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --color-text: #212529;
+  --color-text-light: #828282;
+  --color-footer-bg: #1c1c1d;
+  --color-footer-text: #d2d2d2;
 }
 
 html {
@@ -15,48 +19,46 @@ html {
 }
 
 body {
-  background-color: var(--color-surface);
-  color: #e2e8f0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-/* Custom scrollbar */
+/* Minimal scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-surface);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-surface-lighter);
+  background: #ccc;
   border-radius: 3px;
 }
 
-/* Gradient text utility */
-.gradient-text {
-  background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1c1c1d;
+    color: #d2d2d2;
+  }
 }
 
-/* Glow effect */
-.glow {
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3), 0 0 60px rgba(99, 102, 241, 0.1);
+/* Dashed underline links (al-folio style) */
+.link-dashed {
+  text-decoration: none;
+  border-bottom: 1px dashed var(--color-theme);
+}
+.link-dashed:hover {
+  border-bottom-style: solid;
 }
 
-/* Skill bar animation */
-@keyframes fillBar {
-  from { width: 0; }
-}
-.skill-bar {
-  animation: fillBar 1s ease-out forwards;
-}
-
-/* Floating animation */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+/* News table layout */
+.news-table td:first-child {
+  width: 100px;
+  white-space: nowrap;
+  vertical-align: top;
+  color: var(--color-theme);
+  font-weight: 600;
 }

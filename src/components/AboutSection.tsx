@@ -1,29 +1,31 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { profile } from "@/payload/profile";
 import SectionHeading from "./SectionHeading";
+
+const news = [
+  { date: "2026.01", text: "KT GenAI LAB Document AI 프로젝트 착수 (Dewarping, Orientation)" },
+  { date: "2025.03", text: "KT 기술혁신부문 GenAI LAB AI Researcher 입사" },
+  { date: "2025.03", text: "IROS 2025 논문 투고 — Spatial Scene Graph Generation" },
+  { date: "2025.02", text: "KAIST 전산학부 석사 졸업" },
+  { date: "2024.07", text: "KT Vision AI연구담당 Research Intern" },
+];
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 px-6">
-      <div className="max-w-4xl mx-auto">
-        <SectionHeading title="About Me" subtitle="저를 소개합니다" />
-        <div className="space-y-6">
-          {profile.introduction.map((text, i) => (
-            <motion.p
-              key={i}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-              className="text-lg text-slate-300 leading-relaxed pl-6 border-l-2 border-primary/30 hover:border-primary transition-colors duration-300"
-            >
-              {text}
-            </motion.p>
+    <section className="max-w-[800px] mx-auto px-6 py-10">
+      <SectionHeading title="news" />
+      <table className="news-table w-full text-sm">
+        <tbody>
+          {news.map((item, i) => (
+            <tr key={i} className="border-b border-divider last:border-0">
+              <td className="py-2 pr-4 text-theme font-semibold whitespace-nowrap">
+                {item.date}
+              </td>
+              <td className="py-2 text-text">{item.text}</td>
+            </tr>
           ))}
-        </div>
-      </div>
+        </tbody>
+      </table>
     </section>
   );
 }
