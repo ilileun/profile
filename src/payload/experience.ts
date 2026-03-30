@@ -48,9 +48,9 @@ export const experiences: Experience[] = [
   },
   {
     company: "전남대학교 · BMIL",
-    role: "학부 연구생",
+    role: "학부 연구생 (유선용 교수님)",
     period: "2020.03 - 2021.02",
-    description: "바이오메디컬 지능연구실 (유선용 교수님)",
+    description: "",
     highlights: [],
   },
 ];
