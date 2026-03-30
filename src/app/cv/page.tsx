@@ -143,24 +143,30 @@ export default function CVPage() {
       {/* Selected Projects */}
       <section className="mb-7">
         <h2 className="text-sm font-bold uppercase tracking-widest text-[#b509ac] mb-3">Selected Projects</h2>
-        <div className="text-sm space-y-2">
-          <div className="flex justify-between items-baseline">
-            <p><strong>Spatial Scene Graph Generation</strong> <span className="text-gray-400 text-xs">BECS · IITP</span> — 1st Author. Spatial reasoning enhancement via LoRA fine-tuning and Multi-Agent scene graph generation</p>
-            <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2024–2025</span>
-          </div>
-          <div className="flex justify-between items-baseline">
-            <p><strong>6-DoF Pose Estimation</strong> <span className="text-gray-400 text-xs">SEMES</span> — Vision-based pose estimation for automated assembly of irregular multi-slot components</p>
-            <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2023–2024</span>
-          </div>
-          <div className="flex justify-between items-baseline">
-            <p><strong>3D Concept Graph</strong> <span className="text-gray-400 text-xs">MSIT</span> — Real-time 3D scene graph generation and environment perception for autonomous agents</p>
-            <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2024–2027</span>
-          </div>
-          <div className="flex justify-between items-baseline">
-            <p><strong>Illegal Medical Institution Prediction</strong> <span className="text-gray-400 text-xs">NHIS</span> — Attention-based neural network for fraudulent hospital detection on large-scale claims data</p>
-            <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2020–2021</span>
-          </div>
-        </div>
+        <table className="w-full text-sm">
+          <tbody>
+            <tr className="border-b border-gray-100">
+              <td className="py-2 pr-3 align-top font-bold whitespace-nowrap">Spatial Scene Graph Generation</td>
+              <td className="py-2 pr-3 align-top text-gray-500">Spatial reasoning enhancement via LoRA fine-tuning and Multi-Agent pipeline</td>
+              <td className="py-2 align-top text-xs text-gray-400 whitespace-nowrap text-right" style={{ fontFamily: "'JetBrains Mono', monospace" }}>IITP · 2024–2025</td>
+            </tr>
+            <tr className="border-b border-gray-100">
+              <td className="py-2 pr-3 align-top font-bold whitespace-nowrap">6-DoF Pose Estimation</td>
+              <td className="py-2 pr-3 align-top text-gray-500">Vision-based pose estimation for automated assembly of irregular components</td>
+              <td className="py-2 align-top text-xs text-gray-400 whitespace-nowrap text-right" style={{ fontFamily: "'JetBrains Mono', monospace" }}>SEMES · 2023–2024</td>
+            </tr>
+            <tr className="border-b border-gray-100">
+              <td className="py-2 pr-3 align-top font-bold whitespace-nowrap">3D Concept Graph</td>
+              <td className="py-2 pr-3 align-top text-gray-500">Real-time 3D scene graph generation and environment perception for autonomous agents</td>
+              <td className="py-2 align-top text-xs text-gray-400 whitespace-nowrap text-right" style={{ fontFamily: "'JetBrains Mono', monospace" }}>MSIT · 2024–2027</td>
+            </tr>
+            <tr>
+              <td className="py-2 pr-3 align-top font-bold whitespace-nowrap">Medical Fraud Detection</td>
+              <td className="py-2 pr-3 align-top text-gray-500">Attention-based neural network for fraudulent hospital detection on claims data</td>
+              <td className="py-2 align-top text-xs text-gray-400 whitespace-nowrap text-right" style={{ fontFamily: "'JetBrains Mono', monospace" }}>NHIS · 2020–2021</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       {/* Skills */}
