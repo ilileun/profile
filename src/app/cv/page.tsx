@@ -65,7 +65,7 @@ export default function CVPage() {
             </div>
             <span className="text-xs text-gray-400 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Mar 2025 – Present</span>
           </div>
-          <p className="text-sm text-gray-600 mt-1">Document AI 모델 연구개발 (문서 왜곡 보정, 방향 인식, 읽기 순서 정렬) 및 Video AI 모델 고도화·서빙</p>
+          <p className="text-sm text-gray-600 mt-1">Document AI R&amp;D (dewarping, orientation, reading order) and Video AI model development &amp; serving</p>
         </div>
 
         <div className="mb-4">
@@ -76,7 +76,7 @@ export default function CVPage() {
             </div>
             <span className="text-xs text-gray-400 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Jul – Aug 2024</span>
           </div>
-          <p className="text-sm text-gray-600 mt-1">Video AI 기반 하이라이트 탐지 및 숏폼 자동 생성 연구</p>
+          <p className="text-sm text-gray-600 mt-1">Video AI-based highlight detection and short-form video generation research</p>
         </div>
 
         <div className="mb-4">
@@ -87,7 +87,7 @@ export default function CVPage() {
             </div>
             <span className="text-xs text-gray-400 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Jun 2021 – Jan 2023</span>
           </div>
-          <p className="text-sm text-gray-600 mt-1">Smart Factory 전략 수립, 제조현장 시뮬레이션 투자 검증, AI 인재 커뮤니티 기획·운영</p>
+          <p className="text-sm text-gray-600 mt-1">Smart Factory strategy, manufacturing simulation for investment validation, AI community planning</p>
         </div>
       </section>
 
