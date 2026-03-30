@@ -1,7 +1,10 @@
+export type ProjectType = "공동연구" | "국책과제" | "기업과제" | "개인연구" | "기술지원" | "기획";
+
 export interface Project {
   title: string;
   period: string;
   org: string;
+  type: ProjectType;
   problem: string;
   approach: string;
   result: string;
@@ -13,7 +16,8 @@ export const projects: Project[] = [
   {
     title: "문서 왜곡 보정 (Dewarping)",
     period: "2025.10 - 2026.04",
-    org: "메리츠화재 · KT 공동연구",
+    org: "메리츠화재 · KT",
+    type: "공동연구",
     problem:
       "카메라로 촬영한 문서는 굽힘·접힘으로 왜곡이 발생하며, 보정 없이 OCR에 입력하면 인식률이 크게 떨어지는 문제가 반복",
     approach:
@@ -25,7 +29,8 @@ export const projects: Project[] = [
   {
     title: "문서 방향 인식 (Orientation)",
     period: "2025.10 - 2026.04",
-    org: "메리츠화재 · KT 공동연구",
+    org: "메리츠화재 · KT",
+    type: "공동연구",
     problem:
       "파이프라인에 회전된 상태로 들어오는 문서가 그대로 OCR에 입력되면 글자를 아예 인식하지 못하는 문제가 반복 발생",
     approach:
@@ -37,7 +42,8 @@ export const projects: Project[] = [
   {
     title: "읽기 순서 정렬 (Reading Order)",
     period: "2025.10 - 2026.04",
-    org: "메리츠화재 · KT 공동연구",
+    org: "메리츠화재 · KT",
+    type: "공동연구",
     problem:
       "기존 Greedy 방식은 단일 칼럼 문서에서는 무난하지만, 뉴스·논문 등 다단(multi-column) 레이아웃에서는 읽기 순서가 뒤섞여 RAG 청킹 시 문맥이 깨지는 문제가 발생",
     approach:
@@ -50,7 +56,8 @@ export const projects: Project[] = [
   {
     title: "비디오 요약 모델 고도화 (Narrative Video)",
     period: "2025.01 - 2025.12",
-    org: "KT 미디어본부 기술지원",
+    org: "KT 미디어본부",
+    type: "기술지원",
     problem:
       "드라마 등 장편 비디오에서 씬 단위 메타데이터(장르, 분위기, 행동 등)를 자동 생성하는 방법 자체가 없었음. 수작업 라벨링은 비용과 시간이 과다하여 대규모 적용이 불가능",
     approach:
@@ -62,7 +69,8 @@ export const projects: Project[] = [
   {
     title: "의미론적 씬 타이틀 추천 시스템",
     period: "2025.01 - 2025.12",
-    org: "KT 미디어본부 기술지원",
+    org: "KT 미디어본부",
+    type: "기술지원",
     problem:
       "기존 씬 타이틀은 비주얼 정보만으로 생성되어 대사의 맥락이나 감정이 반영되지 않음. 씬의 의미를 담은 타이틀을 자동 생성하는 방법이 부재",
     approach:
@@ -75,7 +83,8 @@ export const projects: Project[] = [
   {
     title: "대사 기반 하이라이트 탐지 및 숏폼 자동 생성",
     period: "2024.07 - 2024.08",
-    org: "KT 인턴",
+    org: "KT Vision AI",
+    type: "개인연구",
     problem:
       "사용자가 비디오를 검색하려 해도 어떤 장면이 있는지, 무엇을 검색해야 하는지 알 수 없음. 핵심 장면을 먼저 추천해주면 탐색 비용을 줄일 수 있다는 아이디어에서 출발",
     approach:
@@ -86,9 +95,10 @@ export const projects: Project[] = [
   },
   // KAIST 석사 연구
   {
-    title: "공간 장면 그래프 생성 (BECS · IITP 국책과제)",
+    title: "공간 장면 그래프 생성 (BECS)",
     period: "2024.07 - 2025.02",
-    org: "KAIST · BECS 연구센터 · 1st Author",
+    org: "KAIST · BECS 연구센터",
+    type: "국책과제",
     problem:
       "엣지 클라우드 환경에서 로봇이 공간을 이해하려면 실시간 장면 그래프가 필요하나, 기존 멀티모달 모델은 기본적 공간 관계 추론에서 성능 저조",
     approach:
@@ -98,9 +108,10 @@ export const projects: Project[] = [
     techStack: ["LoRA", "Blender", "CLIP", "Multi-Agent", "Edge Cloud"],
   },
   {
-    title: "비정형 다중 삽입구 자동 이/적재 (SEMES 기업과제)",
+    title: "비정형 다중 삽입구 자동 이/적재",
     period: "2023.05 - 2024.08",
-    org: "KAIST",
+    org: "KAIST · SEMES",
+    type: "기업과제",
     problem:
       "반도체 장비 조립 시 비정형 삽입구가 많아 수동 작업에 의존하고 있었으나, 미세한 각도 오차에도 삽입이 불가능하여 불량과 공정 지연이 빈번하게 발생",
     approach:
@@ -110,9 +121,10 @@ export const projects: Project[] = [
     techStack: ["ROS2", "Gazebo", "UR5e", "3D Point Cloud"],
   },
   {
-    title: "정밀 3차원 컨셉그래프 생성 (과기부 국책과제)",
+    title: "정밀 3차원 컨셉그래프 생성",
     period: "2024.04 - 2027.12",
     org: "KAIST",
+    type: "국책과제",
     problem:
       "자율행동체가 환경 변화를 실시간 인식하려면 장면을 그래프 구조로 표현·업데이트해야 함",
     approach:
@@ -125,7 +137,8 @@ export const projects: Project[] = [
   {
     title: "크레인(OHC) 투자 타당성 시뮬레이션 검증",
     period: "2022.03 - 2022.08",
-    org: "POSCO · Smart Factory 기획그룹",
+    org: "POSCO",
+    type: "기획",
     problem:
       "크레인 추가 도입(20억 규모)을 검토 중이었으나, 실제 도입 전에 효과를 검증할 방법이 없어 투자 의사결정에 정량적 근거가 부족",
     approach:
@@ -137,7 +150,8 @@ export const projects: Project[] = [
   {
     title: "사내 AI 기술 블로그 기획 및 운영",
     period: "2022.01 - 2022.06",
-    org: "POSCO · Smart Factory 기획그룹",
+    org: "POSCO",
+    type: "기획",
     problem:
       "AI 모델을 개발하는 전문가들이 사내에 다수 있었지만 서로의 작업을 공유할 채널이 없었음. 뉴칼라 인증(사내 IT역량 레벨) 심사에서 모델 개발 기여도를 평가할 기준도 모호한 상태",
     approach:
@@ -148,9 +162,10 @@ export const projects: Project[] = [
   },
   // 전남대 학부 연구
   {
-    title: "AI 기반 불법의료기관(사무장 병원) 예측 모델 (건강보험공단 협업)",
+    title: "불법의료기관(사무장 병원) 예측 모델",
     period: "2020.06 - 2021.01",
-    org: "전남대학교 · BMIL",
+    org: "전남대 · 건강보험공단",
+    type: "공동연구",
     problem:
       "사무장 병원 적발은 기존에 통계적 규칙 기반으로 이루어져 새로운 패턴의 불법 기관을 탐지하기 어려웠음",
     approach:
@@ -162,7 +177,8 @@ export const projects: Project[] = [
   {
     title: "대사증후군 위험인자 분석",
     period: "2020.03 - 2020.12",
-    org: "전남대학교 · BMIL",
+    org: "전남대 · BMIL",
+    type: "개인연구",
     problem:
       "대사증후군 영향 요인의 체계적 파악 및 예방 정책 근거 자료 필요",
     approach:

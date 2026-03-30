@@ -78,10 +78,15 @@ export default function ProjectsSection() {
                     transition={{ delay: i * 0.1, duration: 0.4 }}
                     className={`rounded-xl border ${group.color} ${group.bg} p-5`}
                   >
-                    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-3">
-                      <h4 className="text-[15px] font-semibold">
-                        {project.title}
-                      </h4>
+                    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h4 className="text-[15px] font-semibold">
+                          {project.title}
+                        </h4>
+                        <span className="px-1.5 py-0.5 text-[10px] rounded font-medium bg-gray-200/60 text-gray-500 dark:bg-gray-700/60 dark:text-gray-400">
+                          {project.type}
+                        </span>
+                      </div>
                       <span
                         className="text-xs text-gray-400 shrink-0"
                         style={{
@@ -91,6 +96,7 @@ export default function ProjectsSection() {
                         {project.period}
                       </span>
                     </div>
+                    <p className="text-xs text-gray-400 mb-3">{project.org}</p>
 
                     <div className="space-y-2 text-[14px] leading-relaxed">
                       <p>
