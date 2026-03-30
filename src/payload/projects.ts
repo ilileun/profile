@@ -133,18 +133,6 @@ export const projects: Project[] = [
       "Tabletop 환경에서 실시간 3D 컨셉그래프 생성·업데이트 시연",
     techStack: ["YOLO-World", "SAM", "TSDF", "LLM", "RoboCasa"],
   },
-  {
-    title: "MGHanD: Multi-modal Guidance for Hand Diffusion",
-    period: "2024 - 2025",
-    org: "KAIST · Co-author",
-    problem:
-      "디퓨전 모델 생성 이미지에서 손 왜곡(손가락 개수 오류, 관절 꼬임) 빈발",
-    approach:
-      "시각적 가이던스(손 구조 판별기) + 텍스트 가이던스(LoRA)를 동시 적용. 누적 손 마스크로 손 영역 생성 품질 집중 개선",
-    result:
-      "기존 디퓨전 모델 대비 손 생성 품질 유의미 향상. arXiv 공개 (Mar. 2025)",
-    techStack: ["Stable Diffusion", "LoRA", "ViT"],
-  },
   // POSCO
   {
     title: "제조현장 크레인(OHC) 투자 타당성 Simulation 검증",

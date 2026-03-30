@@ -32,7 +32,7 @@ export default function ExperienceSection() {
                   <p className="text-sm text-theme font-medium">
                     {exp.role}
                     <span className="text-gray-400 font-normal ml-2">
-                      · {exp.duration}
+                      · {exp.duration} · {exp.location}
                     </span>
                   </p>
                 </div>
