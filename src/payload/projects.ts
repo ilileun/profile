@@ -108,7 +108,7 @@ export const projects: Project[] = [
     techStack: ["LoRA", "Blender", "CLIP", "Multi-Agent", "Edge Cloud"],
   },
   {
-    title: "비정형 다중 삽입구 자동 이/적재",
+    title: "비정형 다중 삽입구 이적재를 위한 멀티모달 작업 기술 개발",
     period: "2023.05 - 2024.08",
     org: "KAIST · SEMES",
     type: "기업과제",
@@ -121,9 +121,9 @@ export const projects: Project[] = [
     techStack: ["ROS2", "Gazebo", "UR5e", "3D Point Cloud"],
   },
   {
-    title: "정밀 3차원 컨셉그래프 생성",
+    title: "자율행동체 복합작업을 위한 3차원 컨셉그래프 생성",
     period: "2024.04 - 2027.12",
-    org: "KAIST",
+    org: "KAIST · 과학기술정보통신부",
     type: "국책과제",
     problem:
       "자율행동체가 환경 변화를 실시간 인식하려면 장면을 그래프 구조로 표현·업데이트해야 함",
