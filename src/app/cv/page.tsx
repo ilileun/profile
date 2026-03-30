@@ -54,7 +54,7 @@ export default function CVPage() {
         <div className="mb-5">
           <div className="flex justify-between items-baseline">
             <div>
-              <h3 className="text-sm font-bold">KT · GenAI Technology Team</h3>
+              <h3 className="text-sm font-bold">KT · GenAI LAB</h3>
               <p className="text-sm text-gray-600">Senior Researcher · Seoul</p>
             </div>
             <span className="text-xs text-gray-400 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Mar 2025 – Present</span>
@@ -72,7 +72,7 @@ export default function CVPage() {
         <div className="mb-5">
           <div className="flex justify-between items-baseline">
             <div>
-              <h3 className="text-sm font-bold">KT · Vision AI Research</h3>
+              <h3 className="text-sm font-bold">KT · AI2XL LAB</h3>
               <p className="text-sm text-gray-600">Research Intern · Seoul</p>
             </div>
             <span className="text-xs text-gray-400 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Jul – Aug 2024</span>

@@ -9,7 +9,7 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    company: "KT · GenAI기술팀",
+    company: "KT · GenAI LAB",
     role: "선임 연구원 (경력 1년 인정)",
     period: "2025.03 - 현재",
     duration: "1년+",
@@ -17,7 +17,7 @@ export const experiences: Experience[] = [
     description: "Document AI · Media AI 모델 연구개발 및 서비스 내재화",
   },
   {
-    company: "KT · Vision AI연구담당",
+    company: "KT · AI2XL LAB",
     role: "Research Intern",
     period: "2024.07 - 2024.08",
     duration: "6주",
