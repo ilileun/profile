@@ -138,7 +138,7 @@ export const projects: Project[] = [
     title: "제조현장 투자 타당성 시뮬레이션 검증",
     period: "2022.03 - 2022.08",
     org: "POSCO",
-    type: "기획",
+    type: "기술지원",
     problem:
       "크레인 추가 도입(20억 규모)을 검토 중이었으나, 실제 도입 전에 효과를 검증할 방법이 없어 투자 의사결정에 정량적 근거가 부족",
     approach:
@@ -151,7 +151,7 @@ export const projects: Project[] = [
     title: "사내 AI 기술 블로그 기획 및 운영",
     period: "2022.01 - 2022.06",
     org: "POSCO",
-    type: "기획",
+    type: "기술지원",
     problem:
       "AI 모델을 개발하는 전문가들이 사내에 다수 있었지만 서로의 작업을 공유할 채널이 없었음. 뉴칼라 인증(사내 IT역량 레벨) 심사에서 모델 개발 기여도를 평가할 기준도 모호한 상태",
     approach:
