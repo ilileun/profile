@@ -48,15 +48,15 @@ export const projects: Project[] = [
   },
   // KT 미디어본부 기술지원
   {
-    title: "비디오 메타데이터 추출 모델 고도화",
+    title: "Narrative Video 요약 모델 고도화",
     period: "2025.01 - 2025.12",
     org: "KT 미디어본부 기술지원",
     problem:
       "장편 비디오의 씬 단위 메타데이터를 수동 생성하는 데 비용 과다, 품질 불일관",
     approach:
-      "9.3만건 학습 데이터 구축. VLM 기반 4종 Fine-tuning 전략을 8×A100 분산 학습 환경에서 비교 실험",
+      "AI-Hub 8.1만 + K-Drama 1.2만 개 데이터셋 구축·정제. 8×A100 분산 학습 환경에서 4종 Fine-tuning 전략(Full/Encoder Freeze/LLM Freeze/LoRA) 비교 실험 후 최적 조합 도출. Docker + 비동기 FastAPI 기반 서빙, 배치 처리 및 인코더 최적화",
     result:
-      "Baseline 대비 +10~20pt 성능 향상. 추론 속도 4× 개선. 1,000건 연속 처리 실패율 0%",
+      "Baseline 대비 +10~20pt 성능 향상, TwelveLabs 대비 +2~8pt 우위. 추론 속도 4× 개선. 1,000건 연속 처리 실패율 0%",
     techStack: ["PyTorch", "LoRA", "vLLM", "Docker"],
   },
   {
