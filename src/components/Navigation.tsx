@@ -14,11 +14,11 @@ export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-divider">
+    <nav className="sticky top-0 z-50 bg-white/95 dark:bg-[#1c1c1d]/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
       <div className="max-w-[800px] mx-auto px-6 py-3 flex items-center justify-between">
         <a
           href="#"
-          className="text-base font-bold text-text hover:text-theme transition-colors"
+          className="text-base font-bold hover:text-theme transition-colors"
         >
           ~/{" "}
           <span className="text-theme">jieun</span>
@@ -30,7 +30,7 @@ export default function Navigation() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-muted hover:text-theme transition-colors"
+              className="text-sm text-gray-500 dark:text-gray-400 hover:text-theme transition-colors"
             >
               {item.label}
             </a>
@@ -40,7 +40,7 @@ export default function Navigation() {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-muted hover:text-text"
+          className="md:hidden text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
           aria-label="Toggle menu"
         >
           <svg
@@ -59,15 +59,14 @@ export default function Navigation() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-divider bg-white px-6 py-3 flex flex-col gap-3">
+        <div className="md:hidden border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-[#1c1c1d] px-6 py-3 flex flex-col gap-3">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={() => setMobileOpen(false)}
-              className="text-sm text-muted hover:text-theme"
+              className="text-sm text-gray-500 hover:text-theme"
             >
               {item.label}
             </a>

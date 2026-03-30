@@ -17,7 +17,14 @@
       "Bash(git push:*)",
       "Bash(gh auth:*)",
       "WebFetch(domain:alshedivat.github.io)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(gh run:*)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://link.springer.com/article/10.1007/s11370-024-00550-5\")",
+      "Bash(curl -s https://arxiv.org/abs/2503.08133)",
+      "Bash(brew install:*)",
+      "Bash(pdftotext /Users/jichoi/Downloads/RA_L_2025__Jieun_.pdf -)",
+      "WebSearch",
+      "WebFetch(domain:arxiv.org)"
     ]
   }
 }

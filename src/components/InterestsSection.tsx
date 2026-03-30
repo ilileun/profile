@@ -25,12 +25,12 @@ export default function InterestsSection() {
         {interests.map((item) => (
           <div
             key={item.title}
-            className="p-4 rounded-lg border border-divider bg-bg-alt"
+            className="p-4 rounded-lg border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50"
           >
             <h3 className="text-sm font-semibold text-theme mb-1">
               {item.title}
             </h3>
-            <p className="text-xs text-muted leading-relaxed">
+            <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
               {item.description}
             </p>
           </div>

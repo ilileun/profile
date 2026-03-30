@@ -4,6 +4,7 @@ export interface Education {
   period: string;
   description?: string;
   gpa?: string;
+  link?: string;
 }
 
 export const education: Education[] = [
@@ -11,16 +12,17 @@ export const education: Education[] = [
     school: "KAIST (한국과학기술원)",
     major: "전산학부 석사",
     period: "2023.02 - 2025.02",
-    description:
-      "Robust Intelligence and Robotics Laboratory (지도교수: 박대형)",
+    description: "Robust Intelligence and Robotics Laboratory (지도교수: 박대형)",
     gpa: "3.80 / 4.3 (95.00 / 100)",
+    link: "https://rirolab.kaist.ac.kr",
   },
   {
     school: "전남대학교",
     major: "전기전자컴퓨터공학부 학사",
     period: "2018.03 - 2021.06",
-    description: "Summa Cum Laude",
+    description: "Summa Cum Laude · BMIL 학부 연구생 (유선용 교수님)",
     gpa: "4.32 / 4.5",
+    link: "https://bmil.jnu.ac.kr",
   },
 ];
 

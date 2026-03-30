@@ -1,38 +1,16 @@
 "use client";
 
 import { profile } from "@/payload/profile";
-import { FiMail, FiPhone, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiMail, FiPhone } from "react-icons/fi";
+import { SiGooglescholar } from "react-icons/si";
 
 export default function HeroSection() {
-  const contacts = [
-    profile.contact.email && {
-      icon: FiMail,
-      href: `mailto:${profile.contact.email}`,
-      label: profile.contact.email,
-    },
-    profile.contact.phone && {
-      icon: FiPhone,
-      href: `tel:${profile.contact.phone}`,
-      label: profile.contact.phone,
-    },
-    profile.contact.github && {
-      icon: FiGithub,
-      href: profile.contact.github,
-      label: "GitHub",
-    },
-    profile.contact.linkedin && {
-      icon: FiLinkedin,
-      href: profile.contact.linkedin,
-      label: "LinkedIn",
-    },
-  ].filter(Boolean) as { icon: typeof FiMail; href: string; label: string }[];
-
   return (
     <section className="max-w-[800px] mx-auto px-6 pt-16 pb-12">
       <div className="flex flex-col md:flex-row gap-10 items-start">
         {/* Left: Avatar */}
         <div className="shrink-0 mx-auto md:mx-0">
-          <div className="w-36 h-36 rounded-full bg-gradient-to-br from-theme/20 to-theme-dark/20 flex items-center justify-center border-2 border-divider">
+          <div className="w-36 h-36 rounded-full bg-gradient-to-br from-theme/20 to-theme-dark/20 flex items-center justify-center border-2 border-gray-200 dark:border-gray-700">
             <span className="text-5xl font-bold text-theme">
               {profile.name.charAt(0)}
             </span>
@@ -41,10 +19,12 @@ export default function HeroSection() {
 
         {/* Right: Info */}
         <div className="flex-1">
-          <h1 className="text-4xl md:text-5xl font-bold text-text mb-1">
+          <h1 className="text-4xl md:text-5xl font-bold mb-1">
             {profile.name}
           </h1>
-          <p className="text-lg text-muted mb-4">{profile.nameEn}</p>
+          <p className="text-lg text-gray-500 dark:text-gray-400 mb-4">
+            {profile.nameEn}
+          </p>
 
           <p className="text-base text-theme font-medium mb-4">
             {profile.title}
@@ -52,26 +32,44 @@ export default function HeroSection() {
 
           {/* Contact in monospace */}
           <div
-            className="space-y-1 mb-6 text-sm text-text-light"
+            className="space-y-1.5 mb-6 text-sm text-gray-600 dark:text-gray-400"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
-            {contacts.map(({ icon: Icon, href, label }) => (
-              <div key={label} className="flex items-center gap-2">
-                <Icon size={14} className="text-theme" />
+            <div className="flex items-center gap-2">
+              <FiMail size={14} className="text-theme" />
+              <a
+                href={`mailto:${profile.contact.email}`}
+                className="hover:text-theme transition-colors"
+              >
+                {profile.contact.email}
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <FiPhone size={14} className="text-theme" />
+              <a
+                href={`tel:${profile.contact.phone}`}
+                className="hover:text-theme transition-colors"
+              >
+                {profile.contact.phone}
+              </a>
+            </div>
+            {profile.contact.scholar && (
+              <div className="flex items-center gap-2">
+                <SiGooglescholar size={14} className="text-theme" />
                 <a
-                  href={href}
-                  target={href.startsWith("http") ? "_blank" : undefined}
+                  href={profile.contact.scholar}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-theme transition-colors"
                 >
-                  {label}
+                  Google Scholar
                 </a>
               </div>
-            ))}
+            )}
           </div>
 
           {/* Bio */}
-          <div className="space-y-3 text-[15px] leading-relaxed text-text">
+          <div className="space-y-3 text-[15px] leading-relaxed">
             {profile.introduction.map((text, i) => (
               <p key={i}>{text}</p>
             ))}

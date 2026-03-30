@@ -7,7 +7,10 @@ import SectionHeading from "./SectionHeading";
 export default function AwardsSection() {
   return (
     <section id="awards" className="max-w-[800px] mx-auto px-6 py-10">
-      <SectionHeading title="awards & certifications" subtitle="수상 및 자격" />
+      <SectionHeading
+        title="awards & certifications"
+        subtitle="수상 및 자격"
+      />
 
       {/* Awards */}
       <h3 className="text-sm font-semibold text-theme uppercase tracking-wider mb-4">
@@ -16,21 +19,26 @@ export default function AwardsSection() {
       <table className="w-full text-sm mb-8">
         <tbody>
           {awards.map((award, i) => (
-            <tr key={i} className="border-b border-divider last:border-0">
+            <tr
+              key={i}
+              className="border-b border-gray-50 dark:border-gray-800 last:border-0"
+            >
               <td
-                className="py-2.5 pr-4 text-muted whitespace-nowrap align-top"
+                className="py-2.5 pr-4 text-gray-400 whitespace-nowrap align-top"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 {award.date}
               </td>
-              <td className="py-2.5 text-text">
+              <td className="py-2.5">
                 <span className="font-medium">{award.title}</span>
-                <span className="mx-1.5 text-muted">·</span>
+                <span className="mx-1.5 text-gray-300 dark:text-gray-600">
+                  ·
+                </span>
                 <span className="text-theme text-xs font-medium">
                   {award.grade}
                 </span>
                 <br />
-                <span className="text-xs text-muted">
+                <span className="text-xs text-gray-500 dark:text-gray-400">
                   {award.org} — {award.description}
                 </span>
               </td>
@@ -48,9 +56,9 @@ export default function AwardsSection() {
           <div className="space-y-2">
             {certificates.map((cert, i) => (
               <div key={i} className="text-sm">
-                <span className="text-text font-medium">{cert.name}</span>
+                <span className="font-medium">{cert.name}</span>
                 <br />
-                <span className="text-xs text-muted">
+                <span className="text-xs text-gray-500 dark:text-gray-400">
                   {cert.issuer} · {cert.date}
                 </span>
               </div>
@@ -65,9 +73,11 @@ export default function AwardsSection() {
           <div className="space-y-2">
             {languages.map((lang, i) => (
               <div key={i} className="text-sm">
-                <span className="text-text font-medium">{lang.name}</span>
+                <span className="font-medium">{lang.name}</span>
                 <br />
-                <span className="text-xs text-muted">{lang.detail}</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  {lang.detail}
+                </span>
               </div>
             ))}
           </div>

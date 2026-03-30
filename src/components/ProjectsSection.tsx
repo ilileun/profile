@@ -11,11 +11,11 @@ export default function ProjectsSection() {
         {projects.map((project, i) => (
           <div key={project.title}>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1">
-              <h3 className="text-base font-semibold text-text">
+              <h3 className="text-base font-semibold">
                 {project.title}
               </h3>
               <span
-                className="text-xs text-muted shrink-0"
+                className="text-xs text-gray-400 shrink-0"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 {project.period}
@@ -23,13 +23,15 @@ export default function ProjectsSection() {
             </div>
 
             <p className="text-xs text-theme mb-2">{project.org}</p>
-            <p className="text-sm text-muted mb-3">{project.description}</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+              {project.description}
+            </p>
 
             <ul className="space-y-1 mb-3">
               {project.highlights.map((h, hi) => (
                 <li
                   key={hi}
-                  className="text-[13px] text-text leading-relaxed pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-muted"
+                  className="text-[13px] leading-relaxed pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-gray-400"
                 >
                   {h}
                 </li>
@@ -40,7 +42,7 @@ export default function ProjectsSection() {
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="px-2 py-0.5 text-xs rounded bg-bg-alt text-muted border border-divider"
+                  className="px-2 py-0.5 text-xs rounded bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400 border border-gray-100 dark:border-gray-700"
                 >
                   {tech}
                 </span>
@@ -48,7 +50,7 @@ export default function ProjectsSection() {
             </div>
 
             {i < projects.length - 1 && (
-              <div className="mt-6 h-px bg-divider" />
+              <div className="mt-6 h-px bg-gray-100 dark:bg-gray-800" />
             )}
           </div>
         ))}

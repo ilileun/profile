@@ -17,7 +17,7 @@ export default function SkillsSection() {
               {group.items.map((skill) => (
                 <span
                   key={skill.name}
-                  className="px-2.5 py-1 text-sm rounded bg-bg-alt text-text border border-divider"
+                  className="px-2.5 py-1 text-sm rounded bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
                 >
                   {skill.name}
                   {skill.level >= 5 && (
