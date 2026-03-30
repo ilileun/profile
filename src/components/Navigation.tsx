@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { label: "about", href: "#" },
@@ -24,7 +25,7 @@ export default function Navigation() {
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex gap-6">
+        <div className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -34,15 +35,18 @@ export default function Navigation() {
               {item.label}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-          aria-label="Toggle menu"
-        >
-          <svg
+        {/* Mobile */}
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+            aria-label="Toggle menu"
+          >
+            <svg
             width="20"
             height="20"
             fill="none"
@@ -55,7 +59,8 @@ export default function Navigation() {
               <path d="M3 5h14M3 10h14M3 15h14" />
             )}
           </svg>
-        </button>
+          </button>
+        </div>
       </div>
 
       {mobileOpen && (

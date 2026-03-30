@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-theme: #b509ac;
   --color-theme-light: #d94fd2;
@@ -17,11 +19,9 @@ body {
   line-height: 1.7;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1c1c1d;
-    color: #d2d2d2;
-  }
+.dark body {
+  background-color: #1c1c1d;
+  color: #d2d2d2;
 }
 
 /* Minimal scrollbar */
@@ -36,8 +36,6 @@ body {
   border-radius: 3px;
 }
 
-@media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar-thumb {
-    background: #444;
-  }
+.dark ::-webkit-scrollbar-thumb {
+  background: #444;
 }
