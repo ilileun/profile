@@ -25,8 +25,19 @@ export const publications: Publication[] = [
     link: "https://link.springer.com/article/10.1007/s11370-024-00550-5",
   },
   {
+    title:
+      "Spatial Scene Graph Generation Using Supervised Fine-tuning of a Large Multimodal Model",
+    authors: "Jieun Choi, Deokmin Hwang, Daehyung Park",
+    venue: "IEEE RA-L (투고)",
+    status: "Unpublished",
+    role: "1st Author",
+    description:
+      "물리 엔진 기반 3D 렌더링으로 대규모 공간 관계 데이터셋 자동 생성, LoRA 기반 LMM Fine-tuning, Multi-Agent 기법을 통한 공간적 장면 그래프 생성",
+    pdf: "/papers/spatial-scene-graph-sft-lmm-2025.pdf",
+  },
+  {
     title: "Spatial Scene Graph Generation Using Large Multimodal Models",
-    authors: "Jieun Choi, ..., Daehyung Park",
+    authors: "Jieun Choi, Deokmin Hwang, Daehyung Park",
     venue: "arXiv preprint, Mar. 2025",
     status: "Preprint",
     role: "1st Author",
@@ -43,14 +54,5 @@ export const publications: Publication[] = [
     description:
       "Text/Image 가이던스 기반 디퓨전 과정 손 이미지 왜곡 개선",
     link: "https://arxiv.org/abs/2503.08133",
-  },
-  {
-    title: "RA-L 2025 (논문 제목 업데이트 예정)",
-    authors: "Jieun Choi et al.",
-    venue: "IEEE RA-L (투고)",
-    status: "Unpublished",
-    role: "Author",
-    description: "석사 연구 기반 논문",
-    pdf: "/papers/RA_L_2025__Jieun_.pdf",
   },
 ];
