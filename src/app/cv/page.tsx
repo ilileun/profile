@@ -161,34 +161,22 @@ export default function CVPage() {
       {/* Selected Projects */}
       <section className="mb-7">
         <h2 className="text-sm font-bold uppercase tracking-widest text-[#b509ac] mb-3">Selected Projects</h2>
-        <div className="text-sm space-y-3">
-          <div>
-            <div className="flex justify-between">
-              <h3 className="font-bold">Spatial Scene Graph Generation (BECS · IITP)</h3>
-              <span className="text-xs text-gray-400" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2024–2025</span>
-            </div>
-            <p className="text-gray-600">1st Author · Blender-based 50K dataset, LoRA fine-tuning of LMM, Multi-Agent pipeline · Accuracy +5%, Precision +3% over GPT-4o</p>
+        <div className="text-sm space-y-2">
+          <div className="flex justify-between items-baseline">
+            <p><strong>Spatial Scene Graph Generation</strong> <span className="text-gray-400 text-xs">BECS · IITP</span> — 1st Author. LMM 기반 공간 추론 강화 및 Multi-Agent 장면 그래프 생성</p>
+            <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2024–2025</span>
           </div>
-          <div>
-            <div className="flex justify-between">
-              <h3 className="font-bold">6-DoF Pose Estimation for Assembly Automation (SEMES)</h3>
-              <span className="text-xs text-gray-400" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2023–2024</span>
-            </div>
-            <p className="text-gray-600">Template matching + 3D point cloud · 100% success rate in simulation &amp; real-world experiments</p>
+          <div className="flex justify-between items-baseline">
+            <p><strong>6-DoF Pose Estimation</strong> <span className="text-gray-400 text-xs">SEMES</span> — 비정형 삽입구 자동 이/적재를 위한 비전 기반 포즈 추정</p>
+            <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2023–2024</span>
           </div>
-          <div>
-            <div className="flex justify-between">
-              <h3 className="font-bold">3D Concept Graph for Autonomous Agents (MSIT)</h3>
-              <span className="text-xs text-gray-400" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2024–2027</span>
-            </div>
-            <p className="text-gray-600">YOLO-World + SAM + TSDF + LLM open-vocab edge generation · Real-time 3D graph update demonstrated</p>
+          <div className="flex justify-between items-baseline">
+            <p><strong>3D Concept Graph</strong> <span className="text-gray-400 text-xs">과기부</span> — 자율행동체를 위한 실시간 3D 장면 그래프 생성 및 환경 인식</p>
+            <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2024–2027</span>
           </div>
-          <div>
-            <div className="flex justify-between">
-              <h3 className="font-bold">Illegal Medical Institution Prediction (NHIS Collaboration)</h3>
-              <span className="text-xs text-gray-400" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2020–2021</span>
-            </div>
-            <p className="text-gray-600">Attention-based neural network for fraud detection on large-scale claims data</p>
+          <div className="flex justify-between items-baseline">
+            <p><strong>Illegal Medical Institution Prediction</strong> <span className="text-gray-400 text-xs">건강보험공단</span> — Attention 기반 신경망을 활용한 사무장 병원 탐지</p>
+            <span className="text-xs text-gray-400 shrink-0 ml-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>2020–2021</span>
           </div>
         </div>
       </section>
