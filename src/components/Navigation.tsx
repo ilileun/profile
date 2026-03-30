@@ -8,7 +8,8 @@ const navItems = [
   { label: "publications", href: "#publications" },
   { label: "experience", href: "#experience" },
   { label: "projects", href: "#projects" },
-  { label: "cv", href: "#education" },
+  { label: "education", href: "#education" },
+  { label: "awards", href: "#awards" },
 ];
 
 export default function Navigation() {
