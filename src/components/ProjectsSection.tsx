@@ -1,61 +1,114 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { projects } from "@/payload/projects";
 import SectionHeading from "./SectionHeading";
+
+const groups = [
+  {
+    label: "메리츠화재 · KT 공동연구",
+    color: "border-pink-300 dark:border-pink-700",
+    bg: "bg-pink-50/50 dark:bg-pink-950/20",
+    dot: "bg-pink-400",
+    filter: (p: typeof projects[number]) =>
+      p.org.includes("메리츠") || p.org.includes("KT"),
+  },
+  {
+    label: "KAIST 석사 연구",
+    color: "border-blue-300 dark:border-blue-700",
+    bg: "bg-blue-50/50 dark:bg-blue-950/20",
+    dot: "bg-blue-400",
+    filter: (p: typeof projects[number]) => p.org.includes("KAIST"),
+  },
+  {
+    label: "전남대 학부 연구",
+    color: "border-emerald-300 dark:border-emerald-700",
+    bg: "bg-emerald-50/50 dark:bg-emerald-950/20",
+    dot: "bg-emerald-400",
+    filter: (p: typeof projects[number]) => p.org.includes("전남대"),
+  },
+];
 
 export default function ProjectsSection() {
   return (
     <section id="projects" className="max-w-[800px] mx-auto px-6 py-10">
       <SectionHeading title="projects" subtitle="프로젝트" />
-      <div className="space-y-8">
-        {projects.map((project, i) => (
-          <div key={project.title}>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="text-base font-semibold">
-                {project.title}
-                <span className="text-xs text-theme font-medium ml-2">
-                  {project.org}
-                </span>
-              </h3>
-              <span
-                className="text-xs text-gray-400 shrink-0"
-                style={{ fontFamily: "'JetBrains Mono', monospace" }}
-              >
-                {project.period}
-              </span>
-            </div>
 
-            <div className="space-y-1.5 text-[14px] leading-relaxed">
-              <p>
-                <span className="text-theme font-medium text-xs mr-1.5">Problem</span>
-                {project.problem}
-              </p>
-              <p>
-                <span className="text-theme font-medium text-xs mr-1.5">Approach</span>
-                {project.approach}
-              </p>
-              <p>
-                <span className="text-theme font-medium text-xs mr-1.5">Result</span>
-                {project.result}
-              </p>
-            </div>
+      <div className="space-y-12">
+        {groups.map((group) => {
+          const items = projects.filter(group.filter);
+          if (items.length === 0) return null;
+          return (
+            <div key={group.label}>
+              {/* Group header */}
+              <div className="flex items-center gap-2 mb-4">
+                <div className={`w-3 h-3 rounded-full ${group.dot}`} />
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+                  {group.label}
+                </h3>
+              </div>
 
-            <div className="flex flex-wrap gap-1.5 mt-3">
-              {project.techStack.map((tech) => (
-                <span
-                  key={tech}
-                  className="px-2 py-0.5 text-xs rounded bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400 border border-gray-100 dark:border-gray-700"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+              <div className="space-y-4">
+                {items.map((project, i) => (
+                  <motion.div
+                    key={project.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1, duration: 0.4 }}
+                    className={`rounded-xl border ${group.color} ${group.bg} p-5`}
+                  >
+                    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-3">
+                      <h4 className="text-[15px] font-semibold">
+                        {project.title}
+                      </h4>
+                      <span
+                        className="text-xs text-gray-400 shrink-0"
+                        style={{
+                          fontFamily: "'JetBrains Mono', monospace",
+                        }}
+                      >
+                        {project.period}
+                      </span>
+                    </div>
 
-            {i < projects.length - 1 && (
-              <div className="mt-6 h-px bg-gray-100 dark:bg-gray-800" />
-            )}
-          </div>
-        ))}
+                    <div className="space-y-2 text-[14px] leading-relaxed">
+                      <p>
+                        <span className="inline-block text-theme font-semibold text-xs mr-1.5 bg-theme/10 px-1.5 py-0.5 rounded">
+                          Problem
+                        </span>
+                        {project.problem}
+                      </p>
+                      <p>
+                        <span className="inline-block text-theme font-semibold text-xs mr-1.5 bg-theme/10 px-1.5 py-0.5 rounded">
+                          Approach
+                        </span>
+                        {project.approach}
+                      </p>
+                      <p>
+                        <span className="inline-block text-theme font-semibold text-xs mr-1.5 bg-theme/10 px-1.5 py-0.5 rounded">
+                          Result
+                        </span>
+                        {project.result}
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-1.5 mt-3">
+                      {project.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-2 py-0.5 text-xs rounded bg-white/60 dark:bg-gray-800/60 text-gray-500 dark:text-gray-400 border border-gray-200/50 dark:border-gray-700/50"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

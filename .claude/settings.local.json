@@ -25,7 +25,9 @@
       "Bash(pdftotext /Users/jichoi/Downloads/RA_L_2025__Jieun_.pdf -)",
       "WebSearch",
       "WebFetch(domain:arxiv.org)",
-      "Bash(ls /Users/jichoi/Downloads/mghand* /Users/jichoi/Downloads/scene_graph* /Users/jichoi/Downloads/isr_survey*)"
+      "Bash(ls /Users/jichoi/Downloads/mghand* /Users/jichoi/Downloads/scene_graph* /Users/jichoi/Downloads/isr_survey*)",
+      "WebFetch(domain:becs.kaist.ac.kr)",
+      "Bash(npm ls:*)"
     ]
   }
 }
