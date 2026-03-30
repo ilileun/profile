@@ -20,6 +20,13 @@ const groups = [
     filter: (p: typeof projects[number]) => p.org.includes("미디어본부"),
   },
   {
+    label: "KT Vision AI 인턴",
+    color: "border-amber-300 dark:border-amber-700",
+    bg: "bg-amber-50/50 dark:bg-amber-950/20",
+    dot: "bg-amber-400",
+    filter: (p: typeof projects[number]) => p.org.includes("KT 인턴"),
+  },
+  {
     label: "KAIST 석사 연구",
     color: "border-blue-300 dark:border-blue-700",
     bg: "bg-blue-50/50 dark:bg-blue-950/20",

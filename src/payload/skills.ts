@@ -10,6 +10,7 @@ export const skills: Skill[] = [
       { name: "Python", level: 5 },
       { name: "SQL", level: 5 },
       { name: "C/C++", level: 3 },
+      { name: "Java", level: 3 },
     ],
   },
   {
@@ -20,14 +21,19 @@ export const skills: Skill[] = [
       { name: "Computer Vision", level: 5 },
       { name: "LLM / VLM", level: 4 },
       { name: "Model Serving (vLLM)", level: 4 },
+      { name: "YOLO", level: 4 },
+      { name: "SAM", level: 4 },
+      { name: "Whisper", level: 4 },
+      { name: "PaddlePaddle", level: 4 },
+      { name: "InternVideo2.5", level: 4 },
     ],
   },
   {
     category: "Infra / MLOps",
     items: [
       { name: "Docker", level: 5 },
-      { name: "FastAPI", level: 5 },
-      { name: "Multi-GPU (Slurm)", level: 4 },
+      { name: "Slurm (Multi-GPU)", level: 4 },
+      { name: "MinIO", level: 4 },
       { name: "Linux / Git", level: 5 },
     ],
   },
@@ -37,6 +43,8 @@ export const skills: Skill[] = [
       { name: "Pandas / NumPy", level: 5 },
       { name: "Data Pipeline 설계", level: 4 },
       { name: "Blender (합성 데이터)", level: 4 },
+      { name: "SAS", level: 3 },
+      { name: "ProModel", level: 3 },
     ],
   },
 ];
