@@ -15,12 +15,12 @@ export const projects: Project[] = [
     period: "2025.10 - 2026.04",
     org: "메리츠화재 · KT 공동연구",
     problem:
-      "실세계에서 촬영된 문서는 구겨짐, 휘어짐 등 기하학적 왜곡이 빈번하나, 기존에는 별도 보정 없이 OCR을 수행하여 왜곡 문서에서의 인식 성능이 크게 저하되고 있었음",
+      "카메라로 촬영한 문서는 굽힘·접힘으로 왜곡이 발생하며, 보정 없이 OCR에 입력하면 인식률이 크게 떨어지는 문제가 반복",
     approach:
-      "7개 후보 모델을 DIR300 벤치마크에서 정량 비교 후 최적 모델 선정·Fine-tuning. 학습 데이터 부족은 Blender 합성 데이터 파이프라인으로 해결",
+      "기존 DewarpNet은 2단계 구조로 무겁고 느린 한계가 있었음. 이를 개선한 UVDoc(경량 dual-head 구조)을 베이스로 선정하고, 텍스트 라인 정렬을 정밀하게 보정하는 AADD 방식으로 Fine-tuning. 실제 업무 문서에 맞는 왜곡 패턴 학습을 위해 Blender 합성 데이터 파이프라인 구축",
     result:
-      "MS-SSIM 0.52, PSNR 15.92 달성. 합성 데이터 파이프라인으로 학습 데이터 확보 체계 구축",
-    techStack: ["PyTorch", "Blender", "Docker"],
+      "DIR300 벤치마크 기준 UVDoc 대비 MS-SSIM 0.5125→0.5211, PSNR 15.48→15.92 개선",
+    techStack: ["PyTorch", "UVDoc", "Blender"],
   },
   {
     title: "문서 방향 인식 (Document Orientation)",
