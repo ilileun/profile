@@ -94,7 +94,7 @@ export const projects: Project[] = [
     approach:
       "BECS(빅데이터 엣지 클라우드 서비스) 과제 내에서 엣지 환경 적용을 목표로 연구 수행. Blender 기반 50K 공간 관계 데이터셋 자동 생성, LoRA로 LMM 공간 추론 강화, Node Generator + Edge Generator 분리한 Multi-Agent 파이프라인 설계",
     result:
-      "GPT-4o 대비 Accuracy +35%, Precision +7%. 로봇 워크스페이스에서 적용 검증. BECS 과제 내 연구 성과 발표",
+      "GPT-4o 대비 Accuracy +5%, Precision +3%. 로봇 워크스페이스에서 적용 검증. BECS 과제 내 연구 성과 발표",
     techStack: ["LoRA", "Blender", "CLIP", "Multi-Agent", "Edge Cloud"],
   },
   {
