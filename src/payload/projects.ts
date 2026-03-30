@@ -52,11 +52,11 @@ export const projects: Project[] = [
     period: "2025.01 - 2025.12",
     org: "KT 미디어본부 기술지원",
     problem:
-      "장편 비디오의 씬 단위 메타데이터를 수동 생성하는 데 비용 과다, 품질 불일관",
+      "드라마 등 장편 비디오에서 씬 단위 메타데이터(장르, 분위기, 행동 등)를 자동 생성하는 방법 자체가 없었음. 수작업 라벨링은 비용과 시간이 과다하여 대규모 적용이 불가능",
     approach:
-      "AI-Hub 8.1만 + K-Drama 1.2만 개 데이터셋 구축·정제. 8×A100 분산 학습 환경에서 4종 Fine-tuning 전략(Full/Encoder Freeze/LLM Freeze/LoRA) 비교 실험 후 최적 조합 도출. Docker + 비동기 FastAPI 기반 서빙, 배치 처리 및 인코더 최적화",
+      "씬 분리 후 Gemini를 활용한 메타데이터 자동 생성 + 수작업 라벨링을 병행하여 GT 데이터셋 구축(AI-Hub 8.1만 + K-Drama 1.2만). VLM 기반 End-to-End 메타 추출을 목표로 프롬프트를 설계하고, InternVideo2.5에 대해 4종 SFT 전략(Full/Encoder Freeze/LLM Freeze/LoRA)을 8×A100 분산 환경에서 비교 실험",
     result:
-      "Baseline 대비 +10~20pt 성능 향상, TwelveLabs 대비 +2~8pt 우위. 추론 속도 4× 개선. 1,000건 연속 처리 실패율 0%",
+      "Baseline 대비 +10~20pt 성능 향상. 프롬프트만으로는 한계가 있던 메타 추출을 SFT로 해결하여 End-to-End 자동 생성 파이프라인 구축",
     techStack: ["PyTorch", "LoRA", "vLLM", "Docker"],
   },
   {
