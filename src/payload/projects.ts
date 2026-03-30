@@ -56,7 +56,7 @@ export const projects: Project[] = [
     approach:
       "9.3만건 학습 데이터 구축. VLM 기반 4종 Fine-tuning 전략을 8×A100 분산 학습 환경에서 비교 실험",
     result:
-      "Baseline 대비 +10~20pt 성능 향상. 추론 속도 4× 개선. 1,000건 연속 처리 실패율 0%. 특허 출원",
+      "Baseline 대비 +10~20pt 성능 향상. 추론 속도 4× 개선. 1,000건 연속 처리 실패율 0%",
     techStack: ["PyTorch", "LoRA", "vLLM", "Docker"],
   },
   {
@@ -86,28 +86,16 @@ export const projects: Project[] = [
   },
   // KAIST 석사 연구
   {
-    title: "BECS: 빅데이터 엣지 클라우드 서비스 연구 (IITP 국책과제)",
-    period: "2024.07 - 2024.12",
-    org: "KAIST · BECS 연구센터",
+    title: "Spatial Scene Graph Generation (BECS · IITP 국책과제)",
+    period: "2024.07 - 2025.02",
+    org: "KAIST · BECS 연구센터 · 1st Author",
     problem:
-      "엣지 클라우드 환경에서 대규모 데이터의 실시간 수집·분석·서비스 기술 필요",
+      "엣지 클라우드 환경에서 로봇이 공간을 이해하려면 실시간 장면 그래프가 필요하나, 기존 멀티모달 모델은 기본적 공간 관계 추론에서 성능 저조",
     approach:
-      "빅데이터 엣지 클라우드 서비스 플랫폼 연구 참여. Scene Graph 연구 성과 발표",
+      "BECS(빅데이터 엣지 클라우드 서비스) 과제 내에서 엣지 환경 적용을 목표로 연구 수행. Blender 기반 50K 공간 관계 데이터셋 자동 생성, LoRA로 LMM 공간 추론 강화, Node Generator + Edge Generator 분리한 Multi-Agent 파이프라인 설계",
     result:
-      "Scene Graph Generation 연구를 BECS 과제 내에서 발표 및 검증",
-    techStack: ["Edge Cloud", "Big Data", "Scene Graph"],
-  },
-  {
-    title: "Spatial Scene Graph Generation Using Large Multimodal Models",
-    period: "2024 - 2025",
-    org: "KAIST · BECS · 1st Author",
-    problem:
-      "기존 멀티모달 모델이 좌우/위아래 등 기본적 공간 관계 추론에서 성능 저조. 로봇 적용에는 정확한 공간 이해 필수",
-    approach:
-      "Blender 기반 50K 공간 관계 데이터셋 자동 생성. LoRA로 LMM 공간 추론 강화. Node Generator + Edge Generator 분리한 Multi-Agent 파이프라인 설계",
-    result:
-      "GPT-4o 대비 Accuracy +35%, Precision +7%. 로봇 워크스페이스에서 적용 검증",
-    techStack: ["LoRA", "Blender", "CLIP", "Multi-Agent"],
+      "GPT-4o 대비 Accuracy +35%, Precision +7%. 로봇 워크스페이스에서 적용 검증. BECS 과제 내 연구 성과 발표",
+    techStack: ["LoRA", "Blender", "CLIP", "Multi-Agent", "Edge Cloud"],
   },
   {
     title: "비정형 다중 삽입구 자동 이/적재 (SEMES 기업과제)",

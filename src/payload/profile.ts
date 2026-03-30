@@ -18,7 +18,6 @@ export const profile = {
   },
   introduction: [
     "추상화 뒤에 숨기보다, 전체 흐름을 직접 이해하고 만드는 것을 좋아합니다.",
-    "모델 선정, 데이터 구축, 학습, 평가, 서빙 — 각 단계를 직접 설계하며 배웁니다.",
   ],
-  interests: ["Document AI", "Multimodal RAG", "AI Agent (LangChain / LangGraph)"],
+  interests: ["Document AI", "VLM / LLM", "Multimodal RAG", "AI Agent (LangChain / LangGraph)"],
 };

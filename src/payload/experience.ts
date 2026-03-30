@@ -14,7 +14,7 @@ export const experiences: Experience[] = [
     period: "2025.03 - 현재",
     duration: "1년+",
     location: "서울",
-    description: "메리츠화재 공동연구, KT 미디어본부 기술지원 프로젝트 수행",
+    description: "Document AI · Media AI 모델 연구개발 및 서비스 내재화",
   },
   {
     company: "KT · Vision AI연구담당",
@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
     period: "2024.07 - 2024.08",
     duration: "6주",
     location: "서울",
-    description: "대사 기반 하이라이트 탐지 및 숏폼 자동 생성",
+    description: "Video AI 기반 하이라이트 탐지 및 숏폼 자동 생성 연구",
   },
   {
     company: "POSCO · 생산기술전략실 Smart Factory 기획그룹",
