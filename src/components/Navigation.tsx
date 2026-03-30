@@ -3,6 +3,8 @@
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
+const basePath = process.env.NODE_ENV === "production" ? "/profile" : "";
+
 const navItems = [
   { label: "about", href: "#" },
   { label: "publications", href: "#publications" },
@@ -10,6 +12,7 @@ const navItems = [
   { label: "projects", href: "#projects" },
   { label: "education", href: "#education" },
   { label: "awards", href: "#awards" },
+  { label: "cv", href: `${basePath}/cv` },
 ];
 
 export default function Navigation() {
