@@ -35,7 +35,7 @@ export const projects: Project[] = [
     techStack: ["PyTorch", "PaddlePaddle"],
   },
   {
-    title: "문서 읽기 순서 정렬 (Reading Order) — Adaptive Hybrid 알고리즘",
+    title: "Reading Order (읽기 순서 정렬)",
     period: "2025.10 - 2026.04",
     org: "메리츠화재 · KT 공동연구",
     problem:
