@@ -135,7 +135,7 @@ export const projects: Project[] = [
   },
   // POSCO
   {
-    title: "크레인(OHC) 투자 타당성 시뮬레이션 검증",
+    title: "제조현장 투자 타당성 시뮬레이션 검증",
     period: "2022.03 - 2022.08",
     org: "POSCO",
     type: "기획",
