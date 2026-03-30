@@ -13,9 +13,8 @@ export const experiences: Experience[] = [
     period: "2025.03 - 현재",
     description: "Document AI / Media AI 모델 연구개발 및 서비스 내재화",
     highlights: [
-      "문서 왜곡 보정 모델 — 7개 후보 비교 → Fine-tuning → API 개발까지 End-to-End 파이프라인 구축",
-      "문서 방향 인식 — 94% → 99.6% 정확도 달성, 10만장 데이터셋 구축, 추론 64ms",
-      "비디오 메타데이터 추출 모델 — 4종 학습 아키텍처 설계, Baseline 대비 +10~20pt 성능 향상, 서빙 속도 4× 개선",
+      "[메리츠화재 공동연구 · 2025.10~2026.04] 문서 왜곡 보정(Dewarping), 방향 인식(Orientation), 리딩오더 모델 개발 — 7개 후보 비교 → Fine-tuning → 99.6% 정확도, API 개발",
+      "[KT 미디어본부 협력과제 · 2025.01~2025.12] 비디오 메타데이터 추출 모델 고도화 및 씬 타이틀 추출 시스템 — 4종 아키텍처 비교, Baseline 대비 +10~20pt, 서빙 속도 4× 개선",
     ],
   },
   {
