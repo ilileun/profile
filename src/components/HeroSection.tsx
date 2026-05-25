@@ -71,7 +71,7 @@ export default function HeroSection() {
           </motion.blockquote>
 
           {/* Introduction */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
@@ -82,7 +82,7 @@ export default function HeroSection() {
                 {text}
               </p>
             ))}
-          </motion.div>
+          </motion.div> */}
 
           {/* Interests */}
           <motion.div
