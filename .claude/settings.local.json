@@ -29,7 +29,29 @@
       "WebFetch(domain:becs.kaist.ac.kr)",
       "Bash(npm ls:*)",
       "Bash(curl -s -L --max-time 30 'https://becs.kaist.ac.kr/')",
-      "Bash(curl -s -L --max-time 30 'https://becs.kaist.ac.kr/#_3')"
+      "Bash(curl -s -L --max-time 30 'https://becs.kaist.ac.kr/#_3')",
+      "WebFetch(domain:icml.cc)",
+      "WebFetch(domain:openreview.net)",
+      "WebFetch(domain:sras2026.space)",
+      "WebFetch(domain:3d-llm-vla.github.io)",
+      "WebFetch(domain:computer-vision-in-the-wild.github.io)",
+      "WebFetch(domain:embodied-ai.org)",
+      "WebFetch(domain:gigaai-research.github.io)",
+      "WebFetch(domain:opendrivelab.com)",
+      "WebFetch(domain:robo-3dvlms.github.io)",
+      "WebFetch(domain:www.crcv.ucf.edu)",
+      "WebFetch(domain:cogvl.github.io)",
+      "WebFetch(domain:evalmg.github.io)",
+      "WebFetch(domain:mlforaudioworkshop.github.io)",
+      "WebFetch(domain:mechinterpworkshop.com)",
+      "WebFetch(domain:icra-beyond-teleop.github.io)",
+      "WebFetch(domain:rdi.berkeley.edu)",
+      "WebFetch(domain:www.aicrowd.com)",
+      "WebFetch(domain:www.caisconf.org)",
+      "Bash(python3 -c \"from playwright.sync_api import sync_playwright; print\\(''playwright ok''\\)\")",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -m playwright install chromium)",
+      "Bash(python3:*)"
     ]
   }
 }
